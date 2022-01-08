@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>拉麵首頁</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="/lib/w3.css">
+</head>
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Lobster");
+	body{
+		margin:0px;
+		padding:0px;
+		background:#fff url(https://s1.1zoom.me/b5050/12/Japan_Houses_KyotoStreet_471290_1920x1080.jpg) center 		center fixed no-repeat;　//設定背景圖片的呈現方式
+		background-size: cover;　//設定背景圖片的填滿方式
+		  font-family: Arial, Helvetica, sans-serif;
+	  margin: 0;
+	}		
+		/* Header/logo Title */
+	.header {
+	  padding: 50px;
+	  text-align: center;
+	  background: #fff url(https://s1.1zoom.me/b5050/12/Japan_Houses_KyotoStreet_471290_1920x1080.jpg) center 		center fixed no-repeat;;
+	  color: white;
+	  font-size: 40px;
+	}
+	.header {
+    color: #ff5722;
+    text-align: center;
+	}
+	
+	.header:hover {
+	    animation: orange 1.5s ease-in-out infinite alternate;
+	}
+	
+	
+	@keyframes orange {
+	    to {
+	        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+	            0 0 40px #ff5722, 0 0 70px #ff5722, 0 0 80px #ff5722,
+	            0 0 100px #ff5722, 0 0 150px #ff5722;
+	    }
+	    from {
+	        filter: brightness(110%);
+	        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+	            0 0 20px #ff5722, 0 0 35px #ff5722, 0 0 40px #ff5722,
+	            0 0 50px #ff5722, 0 0 75px #ff5722;
+	    }
+	}
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  position: sticky;
+	  position: -webkit-sticky;
+	  top: 0;
+	}
+	
+	/* Style the navigation bar links */
+	.navbar a {
+	  float: left;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	}
+	
+	
+	/* Right-aligned link */
+	.navbar a.right {
+	  float: right;
+	}
+	
+	/* Change color on hover */
+	.navbar a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	/* Active/current link */
+	.navbar a.active {
+	  background-color: #666;
+	  color: white;
+	}
+	   @import url("https://fonts.googleapis.com/css?family=Lobster");
+
+	.yellow {
+	    display: inline;
+	    font-family: "Lobster";
+	    text-align: center;
+	    font-size: 10vmin;
+	    line-height: 20vmin;
+	    cursor: pointer;
+	    
+	
+	    &:hover {
+	        color: #fff;
+	    }
+	}
+	
+	/*標題*/
+	.yellow {
+	    color: #46A3FF;
+	     text-align: center;
+	}
+	
+	.yellow:hover {
+	    animation: yellow 1.5s ease-in-out infinite alternate;
+	}
+	
+	
+	
+	@keyframes yellow {
+	    to {
+	        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+	            0 0 40px #4DFFFF, 0 0 70px #4DFFFF, 0 0 80px #4DFFFF,
+	            0 0 100px #4DFFFF, 0 0 150px #4DFFFF;
+	    }
+	    from {
+	        filter: brightness(110%);
+	        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+	            0 0 20px #4DFFFF, 0 0 35px #4DFFFF, 0 0 40px #4DFFFF,
+	            0 0 50px #4DFFFF, 0 0 75px #4DFFFF;
+	    }
+	}
+	.pink {
+    color: #46A3FF;
+    }
+	.pink {
+    filter: brightness(110%);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #4DFFFF,
+        0 0 35px #4DFFFF, 0 0 40px #4DFFFF, 0 0 50px #4DFFFF, 0 0 75px #4DFFFF;
+    animation: pink 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes pink {
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+            0 0 40px #4DFFFF, 0 0 70px #4DFFFF, 0 0 80px #4DFFFF,
+            0 0 100px #4DFFFF, 0 0 150px #4DFFFF;
+    }
+}
+</style>
+<body>
+	<!--歡迎視窗_開始-->
+	<script language="JavaScript">
+	<!--
+	function java(){
+	alert("-歡迎光臨-\n\n歡迎來到拉麵派系的家唷！");
+	}
+	function LoadFunctions(){
+	java();
+	}
+	-->
+	</script>
+	<body onLoad="LoadFunctions()">
+<!--歡迎視窗_結束-->
+</body>
+<body>
+  	<div>
+    	<p class="header"><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-ramen-korea-justicon-lineal-color-justicon.png"/></i>拉麵派系首頁</p>
+	</div>
+		<div class="navbar">
+		  <a href="index.html" class="active">Home</a>
+		  <a href="https://www.youtube.com/watch?v=ZckRk5F30MU">拉麵三大派系影片</a>
+		  <a href="https://www.youtube.com/watch?v=z0jmAo6lOX8">拉麵的四個秘密影片</a>
+		  <a href="https://www.youtube.com/watch?v=rES-MVoQjTs">手工拉麵麵條影片</a>
+		  <a href="https://www.youtube.com/watch?v=jCGEZsTXaS8" class="right">手工叉燒影片</a>
+	</div>
+
+	<center>
+		<div>
+    		<p class="yellow">!!各大好吃的拉麵合集!!</p>
+		</div>
+			<small>
+				<span class="mr-3" style="color: white; font-weight:bold;"><i class="fa fa-user" style="color: #46A3FF;"></i>組員名單</span>
+				<span class="mr-3" style="color: white; font-weight:bold;"><i class="fa fa-clock" style="color: #46A3FF;"></i> 2022-01-01 12:00:00</span>
+				<span style="color: white; font-weight:bold;"><i class="fa fa-tags" style="color: #46A3FF;"></i>首頁</span>
+			</small>
+
+			<div class="center">
+				<div class="col-8">
+						<br>
+						<p style="color: white; font-weight:bold;">日本拉麵（日語：ラーメン rāmen）</p>
+						<p style="color: white; font-weight:bold;">是日本料理所使用的麵條與麵食種類之一，多以切製而非拉製而成。在日本其他常見名稱包括「中華そば」。</p>
+						<h2 style="color: #46A3FF; font-weight:bold;" class="pink">點擊下方圖片前往清單呦!</h2></p>
+						<a href="派系清單.html">
+							<div class="w3-content" style="max-width:800px;position:relative">
+							<img class="mySlides" src="https://cw1.tw/CW/images/article/201702/article-58a50e8280597.jpg">
+							<img class="mySlides" src="https://i1.wp.com/live.staticflickr.com/65535/50877599227_5537d103cc_c.jpg?resize=640%2C427&ssl=1">
+							<img class="mySlides" src="https://i0.wp.com/live.staticflickr.com/65535/50877599117_2afb9e8a87_c.jpg?w=640&ssl=1">
+							<img class="mySlides" src="https://i2.wp.com/live.staticflickr.com/65535/50876783973_d6d34dab83_c.jpg?resize=640%2C427&ssl=1">
+						</div>
+						</a>
+						<script>
+							var slideIndex = 0;
+						carousel();
+						
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("mySlides");
+						    for (i = 0; i < x.length; i++) {
+						      x[i].style.display = "none";
+						    }
+						    slideIndex++;
+						    if (slideIndex > x.length) {slideIndex = 1}
+						    x[slideIndex-1].style.display = "block";
+						    setTimeout(carousel, 2000); // Change image every 2 seconds
+						}
+							</script>
+							<div style="background-color:black;">
+		<div class="container d-flex justify-content-between">
+			<div style="color: #46A3FF;">
+                 無版權宣告
+            </div>
+		<div>
+				<i class="fab fa-facebook-square" style="color: #46A3FF;"></i>
+				<i class="fab fa-twitter" style="color: #46A3FF;"></i>
+				<i class="fab fa-line" style="color: #46A3FF;"></i>
+			</div>
+				</div>
+			</div>
+	</center>
+</body>
+</html>

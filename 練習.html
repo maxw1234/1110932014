@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<form class="form-inline">
+	<div>
+		姓別<input type="text" class="form-control form-control-sm" id="user_name">
+	</div><span id="user_name_error"></span>
+	<div class="">
+		密碼<input type="password" class="form-control form-control-sm" id="user_password">
+	</div>
+	<div>
+		確認密碼<input type="password" class="form-control form-control-sm" id="user_password">
+	</div>
+	<div>
+		性別
+	<input type="radio" id="user_name">男
+	<input type="radio" id="user_name">女
+	</div>
+	<input type="submit" id="sure" value="送出">
+	</form>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-scrollable|modal-dialog-centered modal-sm|modal-lg|modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary|secondary|success|danger|warning|info|light|dark" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary|secondary|success|danger|warning|info|light|dark">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script>
+		$('#sure').click(function(){
+			user_name = $("#user_name").val();
+			user_sex = $("#user_sex").val();
+			if(user_name=="" || user_sex==undefined)
+			{
+				$("#user_name_error").html("請輸入姓名")
+				return false;
+			}
+			else
+				return true;	
+		})
+	</script>
+</body>
+</html>
